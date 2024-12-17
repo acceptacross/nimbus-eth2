@@ -47,7 +47,7 @@ type
 proc main =
   let conf = load Config
   if conf.threshold == 0:
-    error "The specified treshold must be greater than zero"
+    error "The specified threshold must be greater than zero"
     quit 1
 
   if conf.remoteSignersUrls.len == 0:
@@ -55,7 +55,7 @@ proc main =
     quit 1
 
   if conf.threshold > conf.remoteSignersUrls.len.uint32:
-    error "The specified treshold must be lower or equal to the number of signers"
+    error "The specified threshold must be lower or equal to the number of signers"
     quit 1
 
   let rng = HmacDrbgContext.new()

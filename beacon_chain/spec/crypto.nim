@@ -9,7 +9,7 @@
 
 # At the time of writing, the exact definitions of what should be used for
 # cryptography in the spec is in flux, with sizes and test vectors still being
-# hashed out. This layer helps isolate those chagnes.
+# hashed out. This layer helps isolate those changes.
 
 # BLS signatures can be combined such that multiple signatures are aggregated.
 # Each time a new signature is added, the corresponding public key must be
